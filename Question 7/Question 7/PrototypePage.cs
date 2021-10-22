@@ -25,16 +25,29 @@ namespace Question_7
 
         private void btnCreatePost_Click(object sender, EventArgs e)
         {
-            this.protype11.SetUsername(UserName);
-            this.protype11.SetTitle(txtPost.Text);
+            if (txtPost.Text == "" || txtDescription.Text == "")
+            {
+                MessageBox.Show("Please fill out the title and description before making a post");
+            }
+            else
+            {
+                this.protype11.SetUsername(UserName);
+                this.protype11.SetTitle(txtPost.Text);
 
-            this.protype11.SetDescription(txtDescription.Text);
+                this.protype11.SetDescription(txtDescription.Text);
+            }
         }
 
         private void btnComment_Click(object sender, EventArgs e)
         {
-            this.protype11.Comment(txtComment.Text, UserName);
-            
+            if (txtComment.Text == "")
+            {
+                MessageBox.Show("Cannot make blank comments");
+            }
+            else
+            {
+                this.protype11.Comment(txtComment.Text, UserName);
+            }      
         }
     }
 }

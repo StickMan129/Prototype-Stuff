@@ -17,12 +17,26 @@ namespace Question_7
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            string RegisteredUsername;
+            if (txtUserName.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtPassword2.Text == "")
+            {
+                MessageBox.Show("Please full out all fields");
+            }
+            else
+            {
+                if (txtPassword.Text != txtPassword2.Text)
+                {
+                    MessageBox.Show("The passwords do not match up");
+                }
+                else
+                {
+                    string RegisteredUsername;
 
-            RegisteredUsername = txtUserName.Text;
+                    RegisteredUsername = txtUserName.Text;
 
-            PrototypePage page = new PrototypePage(RegisteredUsername);
-            page.Show();
+                    PrototypePage page = new PrototypePage(RegisteredUsername);
+                    page.Show();
+                }
+            }
         }
     }
 }
