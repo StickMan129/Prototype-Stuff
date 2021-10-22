@@ -34,6 +34,9 @@ namespace Question_7
             this.btnComment = new System.Windows.Forms.Button();
             this.txtPost = new System.Windows.Forms.TextBox();
             this.txtComment = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.lblDescription = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // protype11
@@ -65,7 +68,7 @@ namespace Question_7
             // 
             // txtPost
             // 
-            this.txtPost.Location = new System.Drawing.Point(21, 75);
+            this.txtPost.Location = new System.Drawing.Point(27, 90);
             this.txtPost.Name = "txtPost";
             this.txtPost.Size = new System.Drawing.Size(132, 23);
             this.txtPost.TabIndex = 3;
@@ -73,16 +76,46 @@ namespace Question_7
             // txtComment
             // 
             this.txtComment.Location = new System.Drawing.Point(194, 75);
+            this.txtComment.MaxLength = 3000;
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
-            this.txtComment.Size = new System.Drawing.Size(132, 127);
+            this.txtComment.Size = new System.Drawing.Size(132, 38);
             this.txtComment.TabIndex = 3;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(27, 72);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(32, 15);
+            this.lblTitle.TabIndex = 4;
+            this.lblTitle.Text = "Title:";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(27, 140);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(132, 127);
+            this.txtDescription.TabIndex = 5;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Location = new System.Drawing.Point(27, 122);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(70, 15);
+            this.lblDescription.TabIndex = 6;
+            this.lblDescription.Text = "Description:";
             // 
             // PrototypePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 667);
+            this.Controls.Add(this.lblDescription);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.txtComment);
             this.Controls.Add(this.txtPost);
             this.Controls.Add(this.btnComment);
@@ -101,5 +134,8 @@ namespace Question_7
         private System.Windows.Forms.Button btnComment;
         private System.Windows.Forms.TextBox txtPost;
         private System.Windows.Forms.TextBox txtComment;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Label lblDescription;
     }
 }

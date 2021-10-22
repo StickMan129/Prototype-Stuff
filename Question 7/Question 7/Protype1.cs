@@ -13,8 +13,6 @@ namespace Question_7
         public Protype1()
         {
             InitializeComponent();
-            rdbtnUpVote.Checked = false;
-            rdbtnDownVote.Checked = false;
         }
 
         int counter = 0;
@@ -29,7 +27,12 @@ namespace Question_7
         }
         public void Comment(string comment, string name)
         {
-            lstComment.Items.Add($"{name} {comment}");
+            txtComment.Text += $"{name}: {comment}" + Environment.NewLine;
+        }
+
+        public void SetDescription(string description)
+        {
+            txtDescription.Text = description;
         }
 
         DateTime time = DateTime.Now;

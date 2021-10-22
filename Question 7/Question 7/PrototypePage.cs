@@ -27,11 +27,14 @@ namespace Question_7
         {
             this.protype11.SetUsername(UserName);
             this.protype11.SetTitle(txtPost.Text);
+
+            this.protype11.SetDescription(txtDescription.Text);
         }
 
         private void btnComment_Click(object sender, EventArgs e)
         {
             this.protype11.Comment(txtComment.Text, UserName);
+            
         }
     }
 }
