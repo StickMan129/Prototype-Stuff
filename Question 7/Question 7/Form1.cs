@@ -22,9 +22,17 @@ namespace Question_7
             string Username;
 
             Username = txtUsername.Text;
+            if (txtUsername.Text != "")
+            {
+                if(txtPassword.Text != "")
+                {
+                    PrototypePage page = new PrototypePage(Username);
+                    page.Show();
+                }
+            }else
+                MessageBox.Show("Please fill out the Username/Password text before attempting to log-in");
 
-            PrototypePage page = new PrototypePage(Username);
-            page.Show();
+
         }
 
         private void button2_Click(object sender, EventArgs e)

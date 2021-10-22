@@ -41,12 +41,16 @@ namespace Question_7
         {
             counter++;
             lblUpVoteRating.Text = counter.ToString();
+            radioButton1.Enabled = false;
+            radioButton2.Enabled = false;
         }
 
         private void rdbtnDownVote_CheckedChanged(object sender, EventArgs e)
         {
             counter--;
             lblUpVoteRating.Text = counter.ToString();
+            radioButton1.Enabled = false;
+            radioButton2.Enabled = false;
         }
     }
 }
