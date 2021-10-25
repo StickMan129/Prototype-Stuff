@@ -43,7 +43,9 @@ namespace Question_7
             // lblPostedBy
             // 
             this.lblPostedBy.AutoSize = true;
+            this.lblPostedBy.BackColor = System.Drawing.Color.Transparent;
             this.lblPostedBy.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPostedBy.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblPostedBy.Location = new System.Drawing.Point(90, 36);
             this.lblPostedBy.Name = "lblPostedBy";
             this.lblPostedBy.Size = new System.Drawing.Size(59, 14);
@@ -53,7 +55,9 @@ namespace Question_7
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblTitle.Location = new System.Drawing.Point(98, 64);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(51, 20);
@@ -62,6 +66,7 @@ namespace Question_7
             // 
             // txtDescription
             // 
+            this.txtDescription.BackColor = System.Drawing.SystemColors.Control;
             this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescription.Location = new System.Drawing.Point(11, 110);
             this.txtDescription.Multiline = true;
@@ -72,6 +77,7 @@ namespace Question_7
             // 
             // txtComment
             // 
+            this.txtComment.BackColor = System.Drawing.SystemColors.Control;
             this.txtComment.Location = new System.Drawing.Point(11, 264);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
@@ -104,6 +110,8 @@ namespace Question_7
             // lblUpVoteRating
             // 
             this.lblUpVoteRating.AutoSize = true;
+            this.lblUpVoteRating.BackColor = System.Drawing.Color.Transparent;
+            this.lblUpVoteRating.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblUpVoteRating.Location = new System.Drawing.Point(6, 39);
             this.lblUpVoteRating.Name = "lblUpVoteRating";
             this.lblUpVoteRating.Size = new System.Drawing.Size(13, 15);
@@ -125,6 +133,7 @@ namespace Question_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtComment);
             this.Controls.Add(this.txtDescription);

@@ -23,19 +23,25 @@ namespace Question_7
 
         }
 
+        public void recieveTitle(string title)
+        {
+            this.protype11.SetTitle(title);
+        }
+
+        public void recieveDescription(string description)
+        {
+            this.protype11.SetDescription(description);
+        }
+
         private void btnCreatePost_Click(object sender, EventArgs e)
         {
-            if (txtPost.Text == "" || txtDescription.Text == "")
-            {
-                MessageBox.Show("Please fill out the title and description before making a post");
-            }
-            else
-            {
-                this.protype11.SetUsername(UserName);
-                this.protype11.SetTitle(txtPost.Text);
+            MakePost frm2 = new MakePost();
+            frm2.SendMessage += recieveTitle;
+            frm2.SendMessage2 += recieveDescription;
+            frm2.ShowDialog();
 
-                this.protype11.SetDescription(txtDescription.Text);
-            }
+            this.protype11.SetUsername(UserName);
+
         }
 
         private void btnComment_Click(object sender, EventArgs e)
