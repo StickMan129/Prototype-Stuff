@@ -43,7 +43,7 @@ namespace Question_7
             this.protype11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.protype11.Location = new System.Drawing.Point(3, 3);
             this.protype11.Name = "protype11";
-            this.protype11.Size = new System.Drawing.Size(488, 412);
+            this.protype11.Size = new System.Drawing.Size(486, 415);
             this.protype11.TabIndex = 1;
             // 
             // btnCreatePost
