@@ -82,6 +82,7 @@ namespace Question_7
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.ReadOnly = true;
+            this.txtComment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtComment.Size = new System.Drawing.Size(448, 129);
             this.txtComment.TabIndex = 9;
             // 
