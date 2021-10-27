@@ -37,6 +37,18 @@ namespace Question_7
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
+            // protype11
+            // 
+            this.protype11.BackColor = System.Drawing.SystemColors.Control;
+            this.protype11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.protype11.Location = new System.Drawing.Point(3, 3);
+            this.protype11.Name = "protype11";
+            this.protype11.Size = new System.Drawing.Size(486, 415);
+            this.protype11.TabIndex = 1;
+            // 
+=======
+>>>>>>> 5e801c735cef6ed129820a7e9cdcdce93996c995
             // btnCreatePost
             // 
             this.btnCreatePost.Location = new System.Drawing.Point(12, 12);

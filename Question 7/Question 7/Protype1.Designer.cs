@@ -141,7 +141,7 @@ namespace Question_7
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblPostedBy);
             this.Name = "Protype1";
-            this.Size = new System.Drawing.Size(476, 538);
+            this.Size = new System.Drawing.Size(476, 401);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
