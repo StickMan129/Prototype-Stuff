@@ -42,6 +42,10 @@ namespace Question_7
 
             this.protype11.SetUsername(UserName);
 
+            this.protype11 = new Protype1();
+
+            flowLayoutPanel1.Controls.Add(protype11);
+
         }
 
         private void btnComment_Click(object sender, EventArgs e)
