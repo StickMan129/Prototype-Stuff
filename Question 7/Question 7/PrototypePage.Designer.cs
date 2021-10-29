@@ -33,22 +33,8 @@ namespace Question_7
             this.btnComment = new System.Windows.Forms.Button();
             this.txtComment = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.protype11 = new Question_7.Protype1();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-<<<<<<< HEAD
-            // protype11
-            // 
-            this.protype11.BackColor = System.Drawing.SystemColors.Control;
-            this.protype11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.protype11.Location = new System.Drawing.Point(3, 3);
-            this.protype11.Name = "protype11";
-            this.protype11.Size = new System.Drawing.Size(486, 415);
-            this.protype11.TabIndex = 1;
-            // 
-=======
->>>>>>> 5e801c735cef6ed129820a7e9cdcdce93996c995
             // btnCreatePost
             // 
             this.btnCreatePost.Location = new System.Drawing.Point(12, 12);
@@ -81,19 +67,10 @@ namespace Question_7
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.protype11);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(208, 6);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(498, 427);
             this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // protype11
-            // 
-            this.protype11.BackColor = System.Drawing.SystemColors.Control;
-            this.protype11.Location = new System.Drawing.Point(3, 3);
-            this.protype11.Name = "protype11";
-            this.protype11.Size = new System.Drawing.Size(476, 410);
-            this.protype11.TabIndex = 5;
             // 
             // PrototypePage
             // 
@@ -107,7 +84,6 @@ namespace Question_7
             this.Controls.Add(this.btnCreatePost);
             this.Name = "PrototypePage";
             this.Text = "PrototypePage";
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,6 +94,5 @@ namespace Question_7
         private System.Windows.Forms.Button btnComment;
         private System.Windows.Forms.TextBox txtComment;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Protype1 protype11;
     }
 }

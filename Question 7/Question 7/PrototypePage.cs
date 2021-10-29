@@ -10,6 +10,8 @@ namespace Question_7
 {
     public partial class PrototypePage : Form
     {
+        List<Protype1> proList = new List<Protype1>();
+        Protype1 pro = new Protype1();
         public PrototypePage(string username)
         {
             InitializeComponent();
@@ -25,26 +27,28 @@ namespace Question_7
 
         public void recieveTitle(string title)
         {
-            this.protype11.SetTitle(title);
+            pro.SetTitle(title);
         }
 
         public void recieveDescription(string description)
         {
-            this.protype11.SetDescription(description);
+            pro.SetDescription(description);
         }
 
         private void btnCreatePost_Click(object sender, EventArgs e)
         {
+            pro = new Protype1();
+
             MakePost frm2 = new MakePost();
             frm2.SendMessage += recieveTitle;
             frm2.SendMessage2 += recieveDescription;
             frm2.ShowDialog();
 
-            this.protype11.SetUsername(UserName);
+            pro.SetUsername(UserName);
 
-            this.protype11 = new Protype1();
-
-            flowLayoutPanel1.Controls.Add(protype11);
+            proList.Add(pro);
+            foreach(Protype1 x in proList)
+                flowLayoutPanel1.Controls.Add(x);
 
         }
 
@@ -56,7 +60,7 @@ namespace Question_7
             }
             else
             {
-                this.protype11.Comment(txtComment.Text, UserName);
+                pro.Comment(txtComment.Text, UserName);
             }      
         }
     }
