@@ -54,14 +54,14 @@ namespace Question_7
 
         private void btnComment_Click(object sender, EventArgs e)
         {
-            if (txtComment.Text == "")
-            {
-                MessageBox.Show("Cannot make blank comments");
-            }
-            else
-            {
-                pro.Comment(txtComment.Text, UserName);
-            }      
+            //if (txtComment.Text == "")
+            //{
+            //    MessageBox.Show("Cannot make blank comments");
+            //}
+            //else
+            //{
+            //    pro.Comment(txtComment.Text, UserName);
+            //}      
         }
     }
 }

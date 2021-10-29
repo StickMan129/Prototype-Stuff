@@ -67,7 +67,7 @@ namespace Question_7
             this.txtUsername.Location = new System.Drawing.Point(93, 264);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(135, 25);
-            this.txtUsername.TabIndex = 2;
+            this.txtUsername.TabIndex = 1;
             // 
             // button1
             // 

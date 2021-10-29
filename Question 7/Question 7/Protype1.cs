@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Question_7
 {
@@ -16,10 +18,14 @@ namespace Question_7
         }
 
         int counter = 0;
+        string username1;
 
-        public void SetUsername(string username)
+        public string SetUsername(string username)
         {
-            lblPostedBy.Text = "Posted by " + username + " at " + time;
+            string post = "Posted by " + username + " at " + time;
+            lblPostedBy.Text = post;
+            username1 = username;
+            return username1;
         }
         public void SetTitle(string title)
         {
@@ -51,6 +57,19 @@ namespace Question_7
             lblUpVoteRating.Text = counter.ToString();
             radioButton1.Enabled = false;
             radioButton2.Enabled = false;
+        }
+
+        private void btnComment_Click(object sender, EventArgs e)
+        {
+            if (txtComment2.Text == "")
+            {
+                MessageBox.Show("Cannot make blank comments");
+            }
+            else
+            {
+                
+                txtComment.Text += username1 + ": " + txtComment2.Text + Environment.NewLine;
+            }
         }
     }
 }

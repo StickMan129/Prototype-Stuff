@@ -37,6 +37,8 @@ namespace Question_7
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.lblUpVoteRating = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.btnComment = new System.Windows.Forms.Button();
+            this.txtComment2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,17 +70,17 @@ namespace Question_7
             // 
             this.txtDescription.BackColor = System.Drawing.SystemColors.Control;
             this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescription.Location = new System.Drawing.Point(11, 110);
+            this.txtDescription.Location = new System.Drawing.Point(11, 104);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.ReadOnly = true;
-            this.txtDescription.Size = new System.Drawing.Size(448, 148);
+            this.txtDescription.Size = new System.Drawing.Size(448, 138);
             this.txtDescription.TabIndex = 8;
             // 
             // txtComment
             // 
             this.txtComment.BackColor = System.Drawing.SystemColors.Control;
-            this.txtComment.Location = new System.Drawing.Point(11, 264);
+            this.txtComment.Location = new System.Drawing.Point(11, 248);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.ReadOnly = true;
@@ -130,18 +132,38 @@ namespace Question_7
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.rdbtnDownVote_CheckedChanged);
             // 
+            // btnComment
+            // 
+            this.btnComment.Location = new System.Drawing.Point(11, 383);
+            this.btnComment.Name = "btnComment";
+            this.btnComment.Size = new System.Drawing.Size(142, 34);
+            this.btnComment.TabIndex = 11;
+            this.btnComment.Text = "Comment";
+            this.btnComment.UseVisualStyleBackColor = true;
+            this.btnComment.Click += new System.EventHandler(this.btnComment_Click);
+            // 
+            // txtComment2
+            // 
+            this.txtComment2.Location = new System.Drawing.Point(159, 383);
+            this.txtComment2.Multiline = true;
+            this.txtComment2.Name = "txtComment2";
+            this.txtComment2.Size = new System.Drawing.Size(300, 34);
+            this.txtComment2.TabIndex = 12;
+            // 
             // Protype1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.txtComment2);
+            this.Controls.Add(this.btnComment);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtComment);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblPostedBy);
             this.Name = "Protype1";
-            this.Size = new System.Drawing.Size(476, 401);
+            this.Size = new System.Drawing.Size(476, 445);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -158,5 +180,7 @@ namespace Question_7
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label lblUpVoteRating;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button btnComment;
+        private System.Windows.Forms.TextBox txtComment2;
     }
 }
